@@ -1,18 +1,10 @@
-
+/* Resetting default margins and paddings */
 body, h1, h2, ul, li, p, dd, dt, dl {
   margin: 0;
   padding: 0;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
+/* General styling */
 body {
   background: #faf6ed;
   color: #222;
@@ -21,6 +13,18 @@ body {
   grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
 }
 
+/* Image styling */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* List styling */
+ul {
+  list-style: none;
+}
+
+/* Menu styling */
 .menu {
   grid-column: 3 / 5;
   margin-top: 2rem;
@@ -44,9 +48,10 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 0.875rem;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
 }
 
+/* Grid section styling */
 .grid-section {
   grid-column: 2 / 4;
   width: 100%;
@@ -58,6 +63,7 @@ body {
   margin-bottom: 4rem;
 }
 
+/* Title styling */
 .titulo {
   font-family: 'Playfair Display SC', georgia;
   font-size: 6rem;
@@ -67,11 +73,12 @@ body {
   grid-column: 1 / 4;
 }
 
+/* Animais section styling */
 .animais h2 {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   margin-bottom: 1rem;
   color: #E54;
 }
@@ -97,6 +104,7 @@ body {
   grid-column: 2;
 }
 
+/* Custom scrollbar styling */
 .animais-lista::-webkit-scrollbar {
   width: 18px;
 }
@@ -111,6 +119,7 @@ body {
   background: #faf6ed;
 }
 
+/* Animais description styling */
 .animais-descricao {
   grid-column: 3;
 }
@@ -119,15 +128,24 @@ body {
   margin-bottom: 3rem;
 }
 
+.js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block;
+}
+
+/* FAQ list styling */
 .faq-lista {
-  grid-column: 2 / 4
+  grid-column: 2 / 4;
 }
 
 .faq-lista dt {
   font-family: 'IBM Plex Mono', monospace;
   font-weight: bold;
   margin-top: 2rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   color: #E54;
 }
 
@@ -142,10 +160,11 @@ body {
 
 .faq-lista dd {
   font-family: Helvetica, Arial;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   margin-left: 30px;
 }
 
+/* Map and data styling */
 .mapa {
   grid-column: 2;
 }
@@ -168,6 +187,7 @@ body {
   background: #FB5;
 }
 
+/* Copy section styling */
 .copy {
   grid-column: 3 / 5;
   margin-bottom: 2rem;
@@ -180,30 +200,22 @@ body {
   font-weight: bold;
 }
 
+/* Responsive styling */
 @media (max-width: 700px) {
   body {
     grid-template-columns: 1fr;
   }
+
   .menu, .grid-section, .copy {
     grid-column: 1 / -1;
   }
+
   .grid-section {
     grid-template-columns: 100px 1fr;
     grid-gap: 10px;
   }
+
   .animais-lista {
     grid-column: 1;
-  }
-  .faq-lista, .dados, .mapa {
-    grid-column: 1 / -1;
-  }
-  .grid-section h1 {
-    font-size: 3rem;
-  }
-  .menu {
-    margin-top: 0;
-  }
-  .copy {
-    margin-bottom: 0;
   }
 }

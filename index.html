@@ -20,8 +20,8 @@
 
   <section class="grid-section animais" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
-    <ul>
-      <li><img src="./img/imagem1.jpg" alt="Raposa"></li>
+    <ul class="animais-lista js-tabmenu">
+      <li class="ativo"><img src="./img/imagem1.jpg" alt="Raposa"></li>
       <li><img src="./img/imagem2.jpg" alt="Esquilo"></li>
       <li><img src="./img/imagem3.jpg" alt="Urso"></li>
       <li><img src="./img/imagem4.jpg" alt="Lobo"></li>
@@ -29,13 +29,13 @@
       <li><img src="./img/imagem6.jpg" alt="Leão"></li>
     </ul>
 
-    <div class="animais-descriçao">
-      <section class="animais-lista">
+    <div class="animais-descricao js-tabcontent">
+      <section class="ativo">
         <h2>Raposa</h2>
         <p>As raposas são mamíferos carnívoros pertencentes à família Canidae, encontradas em várias partes do mundo,
           principalmente em áreas temperadas e árticas. Existem cerca de 37 espécies diferentes de raposas, incluindo a
           raposa vermelha, a raposa do ártico e a raposa cinzenta.</p>
-      
+      </section>
 
       <section>
         <h2>Esquilo</h2>
@@ -49,35 +49,31 @@
         <p>Os ursos são mamíferos poderosos e imponentes que habitam uma variedade de ecossistemas ao redor do mundo,
           incluindo florestas, tundras e montanhas. Existem várias espécies de ursos, como o urso-pardo, o urso-negro, o
           urso-polar e o panda-gigante. Eles são conhecidos por sua constituição física robusta, garras afiadas e
-          sentidos
-          aguçados.</p>
-      
+          sentidos aguçados.</p>
+      </section>
 
       <section>
         <h2>Lobo</h2>
         <p>Os lobos são carnívoros sociais da família Canidae, altamente adaptáveis e encontrados em uma variedade de
           habitats, desde florestas até tundras. São conhecidos por sua inteligência, habilidades de caça em grupo e
           comunicação complexa através de uivos e vocalizações. Os lobos vivem em matilhas lideradas por um casal alfa,
-          que
-          são os líderes do grupo.</p>
+          que são os líderes do grupo.</p>
+      </section>
+
+      <section>
+        <h2>Macaco</h2>
+        <p>Os macacos são primatas altamente inteligentes e adaptáveis, encontrados em uma variedade de habitats ao
+          redor do mundo, desde florestas tropicais até áreas urbanas. Existem centenas de espécies de macacos, incluindo
+          os macacos-aranha, os babuínos, os macacos-rhesus e os saguis. Eles têm uma dieta variada, que pode incluir
+          frutas, folhas, insetos e pequenos vertebrados, dependendo da espécie e do ambiente em que vivem.</p>
+      </section>
 
       <section>
         <h2>Leão</h2>
         <p>Os leões são majestosos felinos da família Felidae, conhecidos por sua aparência imponente, juba exuberante e
           comportamento social único. Eles habitam as savanas e planícies da África subsaariana, onde vivem em grupos
-          chamados
-          de "orgulhos".</p>
-      
-
-      <section>
-        <h2>Macaco</h2>
-        <p>Os macacos são primatas altamente inteligentes e adaptáveis, encontrados em uma variedade de habitats ao
-          redor do
-          mundo, desde florestas tropicais até áreas urbanas. Existem centenas de espécies de macacos, incluindo os
-          macacos-aranha, os babuínos, os macacos-rhesus e os saguis. Eles têm uma dieta variada, que pode incluir
-          frutas,
-          folhas, insetos e pequenos vertebrados, dependendo da espécie e do ambiente em que vivem.</p>
-      
+          chamados de "orgulhos".</p>
+      </section>
     </div>
   </section>
 
@@ -117,6 +113,7 @@
     <p>Todos os direitos reservados.</p>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="./script.js"></script>
 </body>
+
 </html>
